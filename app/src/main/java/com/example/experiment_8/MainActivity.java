@@ -22,11 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void play(View view) { video.start(); }
 
-    public void pause(View view) {
-        video.pause();
-    }
+    public void pause(View view) { video.pause(); }
 
     public  void replay(View view) {
+        video.start();
         video.resume();
     }
 }
